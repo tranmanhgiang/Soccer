@@ -95,32 +95,97 @@
     </header>
     <!-- Header End -->
 
-
-
-    <section class="hero-section set-bg" data-setbg="img/hero/hero-1.jpg">
-        <div class="container-fluid bg">
-            <div class="row justify-content-center">
-              <div class="col-md-3 col-sm-6 col-xs-12 row-container">
-                <form action="" method = "POST">
-                    <h2 class="title">ĐĂNG NHẬP</h2>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Nhập email" name="email" autofocus >
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bs-text">
+                        <h2>Tạo đội bóng mới</h2>
                     </div>
-                    <div class="form-group">
-                      <label for="password">Mật khẩu</label>
-                      <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" name="password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
-                    <div>Bạn chưa có tài khoản? <a href="regist.html">Đăng ký >></a></div>
-                </form>
-              </div>
+                </div>
             </div>
-          </div>
+        </div>
     </section>
+    <!-- Breadcrumb Section End -->
 
+    <!-- form-invite begin -->
+    <section class="hero-section set-bg">
+        <div class="container">
+            <form action="" method="POST">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Tên đội</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" placeholder="Nhập tên đội bóng của bạn">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Khu vực</label>
+                    <div class="col-sm-10">
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Hà Nội</option>
+                            <option>Thành phố HCM</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Trình độ</label>
+                    <div class="col-sm-10">
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Yếu</option>
+                            <option>Trung bình</option>
+                            <option>Khá</option>
+                            <option>Mạnh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2">Logo đội</label>
+                    <input type="file" class="col-sm-6" name = "thunbar">
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Độ tuổi</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" placeholder="Nhỏ tuổi nhất">
+                    </div>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" placeholder="Lớn tuổi nhất">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Thời gian thường giao lưu</label>
+                    <div class="col-sm-10">
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>CN</option>
+                            <option>Thứ 2</option>
+                            <option>Thứ 3</option>
+                            <option>Thứ 4</option>
+                            <option>Thứ 5</option>
+                            <option>Thứ 6</option>
+                            <option>Thứ 7</option>
+                        </select>
+                    </div>
+                </div>
+                <div class = "form-group row">
+                    <label class="col-sm-2 col-form-label"> Giới thiệu</label>
+                    <div class="col-sm-10">
+                        <textarea class="col-sm-12" style ="height:100px;"></textarea>
+                    </div>
+                </div>
 
-    <!-- Footer Section Begin -->
+                <div class="pull-right">
+                    <button type="button" class="btn btn-danger"><i class="fa fa-check"></i> Xác nhận</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- form-invite end -->
+
+     <!-- Footer Section Begin -->
 <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
         
     <div class="container">
